@@ -5,7 +5,7 @@
 Either download the source code or the **Linux** binary
 
 # Usage
-To run it, either run
+Make sure Java is installed. Tested on Java 26.0.2 . To run it, either run
 ```
 java chatarr.java
 ```
