@@ -17,4 +17,8 @@ Enter a prompt and a step ammount. You are then given a new prompt which you can
 # Example
 "On which pages of this document does the book say 'malware'?". Make sure you include a pdf file when first prompting the ai. You should get an output like [1,3,5,7,22,25,90].
 
+# Name
+The source code and Binary file are called Chatarr due to its internal workings. If anyone wants to change it, feel free to fork the repository, change it and send in a merge request
 
+# Contributing
+If you want to contribute, just do so. I can also hand off the Repo, as it was just a tiny project created in an hour of boredom
