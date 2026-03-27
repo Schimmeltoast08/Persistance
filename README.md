@@ -2,16 +2,18 @@
  A small tool to ensure Ai works through a large document cleanly, step by step.
 
 # Installation
-Either run the source code using 
+Either download the source code or the **Linux** binary
+
+# Usage
+To run it, either run
 ```
 java chatarr.java
 ```
-Or download the **Linux** binary and run it using
+for the source code or
 ```
 ./chatarr.run
 ```
-
-# Usage
+for the binary version
 Enter a prompt and a step ammount. You are then given a new prompt which you can copy-paste into an ai agent or feed it to the ai directly using open-interpreter. Then copy paste the ai's output into the Programm. This will continue until the AI worked through the entire Document or until you write 'EOF'. After some more questions, you are given a List that should answer your prompt.
 
 # Example
