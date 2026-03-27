@@ -12,13 +12,19 @@ public class chatarr{
         Scanner scanner = new Scanner(System.in);
         boolean EOF = false;
         boolean isFirstRun = true;
+        boolean isCorrectStepAmmount = true;
         int startIdx =-5;
 
         IO.print("Enter the prompt: ");
         String prompt = scanner.nextLine();
 
         IO.print("Enter the page step ammount: ");
-        int step = scanner.nextInt();
+        int step = 5;
+        try {
+            step = scanner.nextInt();
+        } catch (Exception e){
+            isCorrectStepAmmount = false;
+        }
 
         int endIdx =  step;
 
@@ -26,6 +32,10 @@ public class chatarr{
         ArrayList<String> persistentMemBlock = new ArrayList<>();
         while (!EOF){
             try{
+                if (!isCorrectStepAmmount){
+                    IO.println("### Note ###\nThat was not a (whole) number. Using default of 5\n");
+
+                }
                 String currentPrompt = prompt;
                 IO.print("Enter Chat Input: "); 
                 String response = scanner.nextLine();
